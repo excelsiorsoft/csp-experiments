@@ -9,6 +9,8 @@ public class App {
 
 	public static void main(String[] args) {
 		
+		//channel is similar to synchronousQueue in j.u.c.                    
+		
 		One2OneChannelInt channel = Channel.one2oneInt();
 		new Parallel(new CSProcess[] {
 				new Producer(channel.out(), 0),
