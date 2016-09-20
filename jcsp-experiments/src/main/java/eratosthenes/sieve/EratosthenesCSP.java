@@ -17,6 +17,7 @@ import org.jcsp.plugNplay.ints.PrinterInt;
  */
 public class EratosthenesCSP {
 
+
 	public static final class NoMultiples implements CSProcess{
 
 		private final int n;
@@ -130,6 +131,7 @@ public class EratosthenesCSP {
 		new Parallel(
 				new CSProcess[] {
 						new Primes(c.out()),
+
 						new PrinterInt(c.in(), "--> ", "\n")
 				}
 				).run();
