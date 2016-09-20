@@ -59,7 +59,7 @@ public class AppAny2Any {
 				new AppAny2Any().new Producer(channel.out(), 0),
 				new AppAny2Any().new Producer(channel.out(), 1000),
 				new AppAny2Any().new Consumer(channel.in(), "A"),
-				new AppAny2Any().new Consumer(channel.in(), "A")
+				new AppAny2Any().new Consumer(channel.in(), "B")
 		}).run();
 	}
 	
