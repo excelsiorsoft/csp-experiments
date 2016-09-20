@@ -1,4 +1,4 @@
-package one2one;
+package any2any;
 
 import org.jcsp.lang.Any2AnyChannelInt;
 import org.jcsp.lang.CSProcess;
