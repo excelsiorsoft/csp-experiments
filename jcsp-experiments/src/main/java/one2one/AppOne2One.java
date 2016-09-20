@@ -8,7 +8,7 @@ import org.jcsp.lang.ChannelOutputInt;
 import org.jcsp.lang.One2OneChannelInt;
 import org.jcsp.lang.Parallel;
 
-public class App {
+public class AppOne2One {
 
 	public class Consumer implements CSProcess {
 
@@ -55,8 +55,8 @@ public class App {
 		One2OneChannelInt channel = Channel.one2oneInt();
 		
 		new Parallel(new CSProcess[] {
-				new App().new Producer(channel.out(), 0),
-				new App().new Consumer(channel.in(), "dst")
+				new AppOne2One().new Producer(channel.out(), 0),
+				new AppOne2One().new Consumer(channel.in(), "dst")
 		}).run();
 	}
 	

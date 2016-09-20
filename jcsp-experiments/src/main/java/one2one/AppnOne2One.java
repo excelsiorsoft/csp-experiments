@@ -15,7 +15,7 @@ import org.jcsp.lang.Parallel;
  * @author Simeon
  *
  */
-public class App1 {
+public class AppnOne2One {
 
 	public static void main(String[] args) {
 
